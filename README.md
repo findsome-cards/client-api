@@ -61,13 +61,13 @@ add the following code to your composer.json file
     "type": "project",
     "description": "your project discription",
     "require": {
-        "findsome/client-api": "dev-master",
+        "findsome/client-api": "dev-master"
     },
     "config": {
         "platform-check": false,
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
+        "sort-packages": true
     },
     "repositories": [
         {
