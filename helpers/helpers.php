@@ -41,7 +41,7 @@ if(! function_exists('build_get_param')) {
             $arrIndex++;
         }
 
-        return $str;
+        return urlencode($str);
     }
 }
 
