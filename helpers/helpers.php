@@ -1,5 +1,14 @@
 <?php
 
+require_once __DIR__.'/../vendor/autoload.php';
+
+if(! function_exists('findsome_api')) {
+    function findsome_api()
+    {
+        return new \Findsome\Client\Findsome;
+    }
+}
+
 if(! function_exists('get_config')) {
     function get_config($file)
     {
