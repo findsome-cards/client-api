@@ -1,0 +1,15 @@
+{
+    "name": "findsome/client-api",
+    "description": "manages request and response for findsome client api",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Findsome\\Client\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    }
+}
