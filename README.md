@@ -15,6 +15,17 @@ add the following code on your composer.json (if you have already added your git
 }
 ```
 
+and then add a new repo on your composer.json repositories array,
+
+```json
+"repositories": [
+    {
+        "type" : "vcs",
+        "url"  : "https://github.com/findsome-cards/client-api.git"
+    }
+]
+```
+
 now you can require this package by 
 
 ```bash
@@ -57,7 +68,13 @@ add the following code to your composer.json file
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
-    }
+    },
+    "repositories": [
+        {
+            "type" : "vcs",
+            "url"  : "https://github.com/findsome-cards/client-api.git"
+        }
+    ]
 }
 
 ```
