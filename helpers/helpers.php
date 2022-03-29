@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
-
 if(! function_exists('findsome_api')) {
     function findsome_api()
     {

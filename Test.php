@@ -7,7 +7,7 @@ require_once('vendor/autoload.php');
 $find = new Findsome;
 
 //support for api direct_call
-//var_dump(findsome_api()->user());
+// var_dump(findsome_api()->user());
 // var_dump($find->user());
 // var_dump($find->baseNames());
 //var_dump($find->search_terms());
