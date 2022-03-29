@@ -4,14 +4,11 @@
 
 ### using the project on existing package
 
-add the following code on your composer.json (if you have already added your github repo access to your composer file, you can ignore this step.)
+set platform-check to **false** code on your composer.json config collection
 
 ```json
 "config": {
-    "platform-check": false,
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true,
+    "platform-check": false
 }
 ```
 
