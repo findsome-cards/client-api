@@ -2,7 +2,7 @@
 
 ## Installation process
 
-### using the project on existing package
+### using the package on existing projects
 
 set platform-check to **false** code on your composer.json config collection
 
@@ -28,10 +28,11 @@ now you can require this package by
 ```bash
 composer require findsome/client-api
 ```
+
 after requiring the package, you will need to publish the config file to your working project directory. remember if you already have a findsome.php file on your config directory of the project root, that file will be replaced by the new findsome.php config file.
 this file will help you to configuare your findsome key => values.
 
-for doing this, first, cd into your project's roo and then run this command on terminal
+for doing this, first, cd into your project's root and then run this command on terminal
 
 ```bash
 php -r "copy('vendor/findsome/client-api/config/findsome.php', 'config/findsome.php');"
@@ -77,6 +78,7 @@ add the following code to your composer.json file
 ```
 
 and then run 
+
 ```bash
 composer install
 ```
@@ -97,3 +99,6 @@ and re-run the publishing command.
 
 now you are good to go.
 
+## Documentation for using this package
+
+in terms of using this package, please read this **[Use Guide](GUIDE.md)**
