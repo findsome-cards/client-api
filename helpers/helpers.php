@@ -48,9 +48,7 @@ if(! function_exists('build_get_param')) {
 if(! function_exists('add_commission')) {
     function add_commission($cards)
     {
-        // $commission = get_config('findsome')['commission'];
-
-        array_map(function ($card) use ($commission) {
+        array_map(function ($card) {
             $card->price = commissioned_price($card->price);
         }, $cards);
 
