@@ -31,6 +31,11 @@ $find = new Findsome;
 //     'page' => '1'
 // ];
 
+// $cards = $find->cards($params);
+// $commissioned = $find->commissionedCards($params);
+// var_dump($cards->data[0]);
+// var_dump($commissioned->data[0]);
+
 /** 
 var_dump($find->cards($params));
 

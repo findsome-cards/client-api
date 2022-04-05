@@ -7,6 +7,9 @@
 set platform-check to **false** code on your composer.json config collection
 
 ```json
+"require": {
+        "findsome/client-api": "dev-master"
+},
 "config": {
     "platform-check": false
 }
@@ -23,10 +26,10 @@ and then add a new repo on your composer.json repositories array,
 ]
 ```
 
-now you can require this package by 
+now you can install this package by 
 
 ```bash
-composer require findsome/client-api
+composer install
 ```
 
 after requiring the package, you will need to publish the config file to your working project directory. remember if you already have a findsome.php file on your config directory of the project root, that file will be replaced by the new findsome.php config file.

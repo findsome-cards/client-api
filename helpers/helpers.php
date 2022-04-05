@@ -48,15 +48,27 @@ if(! function_exists('build_get_param')) {
 if(! function_exists('add_commission')) {
     function add_commission($cards)
     {
-        $commission = get_config('findsome')['commission'];
+        // $commission = get_config('findsome')['commission'];
 
         array_map(function ($card) use ($commission) {
-            $price = (float) $card->price; 
-            $price += $commission;
-            $card->price = $price;
+            $card->price = commissioned_price($card->price);
         }, $cards);
 
         return $cards;
+    }
+}
+
+if(! function_exists('commissioned_price')) {
+    function commissioned_price($price)
+    {
+        $price = (float) $price;
+
+        $type = get_config('findsome')['commission_type'];
+        $commission = get_config('findsome')[$type];
+
+        if($type === 'percent') $commission = ($price / 100.0) * $commission;
+
+        return ceil($price + $commission);
     }
 }
 
