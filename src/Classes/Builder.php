@@ -55,7 +55,12 @@ class Builder
                     "Accept: application/json\r\n".
                     "Authorization: Bearer {$this->config->api_token}\r\n"
                 ]
-            ]
+            ],
+            'ssl' => [
+                'allow_self_signed' => true,
+                'verify_peer'       => false,
+                'verify_peer_name'  => false,
+            ],
         ];
     }
 }
